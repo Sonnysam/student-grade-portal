@@ -1,21 +1,35 @@
 import Link from "next/link";
+import "../../app/style.css";
 
 const Dashboard = () => {
   return (
     <div>
-      {/* <div>
-        <h1 className="text-base cursor-pointer m-3 font-extrabold flex items-center lg:text-3xl md:text-2xl sm:text-xl">
+      <nav className="px-5 py-3 flex justify-between text-white  shadow-sm">
+        <h1 className="text-base cursor-pointer font-extrabold flex items-center lg:text-3xl md:text-2xl sm:text-xl">
           <Link href="/">MGRS</Link>
         </h1>
-      </div> */}
-      <div className="">
-        <ul>
-          <li>Grades</li>
-          <li>Courses</li>
-          <li></li>
-          <li></li>
+
+        <ul className="flex items-center">
+          <li className="mx-3 cursor-pointer">
+            <Link href="/dashboard">Dashboard</Link>
+          </li>
+          <li className="mx-3 cursor-pointer">
+            <Link href="/grade-report">Grade Report</Link>
+          </li>
+          <li className="mx-3 cursor-pointer">
+            <Link href="/missing-grade">Missing Grade Form</Link>
+          </li>
+          <li className="mx-3 cursor-pointer">
+            <Link href="/contact">Instructor Contact</Link>
+          </li>
+          {/* <li className="mx-3 cursor-pointer">
+            <Link href="/help">Help</Link>
+          </li> */}
+          <li className="mx-3 px-4 py-2 bg-white text-black rounded-md cursor-pointer">
+            <Link href="/login">Logout</Link>
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
   );
 };

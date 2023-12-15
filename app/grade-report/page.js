@@ -38,6 +38,64 @@ const GradeReport = () => {
           <p className="text-xl text-black">A</p>
         </div>
       </section>
+
+      <div className="mx-36">
+        <h1
+          className="
+            flex
+            items-center
+            justify-center
+            text-2xl
+            font-bold
+            mt-10
+            text-white
+        "
+        >
+          Grade Report Form
+        </h1>
+        <p
+          className="
+            text-lg
+            flex
+            items-center
+            justify-center
+            text-white
+            mb-10  
+        "
+        >
+          Please fill out the form below to report a missing grade.
+        </p>
+
+        <form className="space-y-6 mb-10" action="#" method="POST">
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-6 text-white"
+            >
+              Course Code
+            </label>
+            <div className="mt-2">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="block w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              className="flex w-full justify-center rounded-md bg-white px-3 py-3 text-sm font-semibold leading-6 text-black shadow-2xl  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              <Link href="/dashboard">Submit</Link>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,14 @@
-import Image from "next/image";
+import Nav from "@/components/Nav";
+import Welcome from "@/components/Welcome";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>hello</p>
+    <main>
+      <Nav/>
+      <Welcome/>
     </main>
   );
 }
+
+
+// Home, login, dashboard,  grade reportError, missing grade, instructors page, help

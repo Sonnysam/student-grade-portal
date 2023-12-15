@@ -1,5 +1,5 @@
-
-import '../app/style.css'
+import "../app/style.css";
+import Link from "next/link";
 
 const Welcome = () => {
   return (
@@ -12,7 +12,7 @@ const Welcome = () => {
       </div>
       <div className="flex justify-center items-center mt-3">
         <button className="py-5 px-32 bg-white text-black rounded-xl">
-            Dashboard
+          <Link href="/login">Dashboard</Link>
         </button>
       </div>
     </main>

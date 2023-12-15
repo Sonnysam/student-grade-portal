@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 
 const Nav = () => {
   return (
@@ -9,8 +9,12 @@ const Nav = () => {
         </h1>
 
         <ul className="flex items-center">
-          <li className="mx-3 cursor-pointer">Help</li>
-          <li className="mx-3 px-4 py-2 bg-white text-black rounded-md cursor-pointer">Login</li>
+          <li className="mx-3 cursor-pointer">
+            <Link href="/help">Help</Link>
+          </li>
+          <li className="mx-3 px-4 py-2 bg-white text-black rounded-md cursor-pointer">
+          <Link href="/login">Login</Link>
+          </li>
         </ul>
       </nav>
     </div>
